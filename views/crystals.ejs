@@ -1,14 +1,17 @@
    <%- include('partials/header.ejs') %>
    <%- include('partials/navbar.ejs') %>
-  
-      <h1 class="page_title">Weaponsmith's Shop</h1>
-      <hr />
-      <!-- Display Case Container -->
-      <div id="weapons-display" class="display-container">
-         <!--displaying weapon products-->
-         <% rows.forEach(function(row){ %>
-         <div class="box blue-box product-container" id="Product_<%= row.productId %>">
-            <form action="/api/addToCart" method="POST">
+   
+   <!-- Front End Design for Crystals Page -->
+   <!--<p> DEV NOTE: Crystals needs to be implemented </p>-->
+   
+   <h1 class="page_title">Crystal Shop</h1>
+   <hr />
+   <!-- Display Case Container -->
+   <div id="crystal-display" class="display-container">
+      <!--displaying products-->
+      <% rows.forEach(function(row){ %>
+      <div class="box blue-box product-container">
+         <form action="/api/addToCart" method="POST">
             <img src='<%= row.imageUrl %>' width='210' alt='<%= row.imageUrl %>'/>
             <br />
             <h5 class="product_name"><%= row.name %></h5>
@@ -17,12 +20,11 @@
             <input type="hidden" name="product_name" value='<%= row.name %>'>      
             <input type="hidden" name="product_price" value='<%= row.price %>'>
             <input class="add-to-cart" type="submit" value="Add To Cart">
-            </form>
-         </div>
-          <% }); %>
-      </div> <!-- ends display case container -->
-     
-    <%- include('partials/footer.ejs') %>
-    </body>
-</html>   
-  
+         </form>
+      </div>
+      <% }); %>
+   </div> <!-- ends display case container -->
+    
+   <%- include('partials/footer.ejs') %>
+   </body>
+</html>

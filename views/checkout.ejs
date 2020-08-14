@@ -1,0 +1,88 @@
+   <%- include('partials/header.ejs') %>
+   <%- include('partials/navbar.ejs') %>
+
+   <br />
+   <br />
+    
+   <!-- Order Billing Form -->
+   <form action="/thankyou">
+        
+      <!-- Billing Address -->
+      <div>
+         <p> Billing Info </p>
+         <!-- first name -->
+         <label for="billing-first-name">First name</label>
+         <input type="text" name="billing-first-name">
+         <!-- last name -->
+         <label for="billing-last-name">Last name</label>
+         <input type="text" name="billing-last-name">
+         <br />
+         <!-- street address -->
+         <label for="street-address">Street address</label>
+         <input type="text" name="street-address">
+         <br />
+         <label for="street-address-2">Street address line 2</label>
+         <input type="text" name="street-address-2">
+         <br />
+         <!-- city -->
+         <label for="city">City</label>
+         <input type="text" name="city">
+         <!-- state/province -->
+         <label for="state-or-province">State / Province</label>
+         <input type="text" name="state-or-province">
+         <br />
+         <!-- zip -->
+         <label for="zip">Postal / Zip Code</label>
+         <input type="text" name="zip">
+         <!-- country -->
+         <label for="country">Country</label>
+         <input type="text" name="country">
+      </div>
+            
+      <br />
+
+      <!-- Contact Info -->
+      <div>
+          <p> Contact Info </p>
+          <!-- phone number -->
+          <label for="area-code">Area Code</label>
+          <input type="text" name="area-code">
+          <label for="phone-number">Phone Number</label>
+          <input type="text" name="phone-number"> 
+          <br />
+          <!-- email -->
+          <label for="billing-email">Email</label>
+          <input type="text" name="billing-email">
+      </div>
+        
+      <br />
+        
+      <!-- Credit Card Info -->
+      <div>
+          <p> Credit Card Info </p>
+          <!-- card provider -->
+          <label for="credit-card-provider">Card Provider</label>
+          <input type="text" name="credit-card-provider"> 
+          <br />
+          <!-- card number -->
+          <label for="credit-card-number">Credit Card Number</label>
+          <input type="text" name="credit-card-number"> 
+          <br />
+          <!-- expiration date -->
+          <label for="card-expiration-date">Expiration Date</label>
+          <input type="text" name="card-expiration-date"> 
+          <!-- security code -->
+          <label for="security-code">CVV</label>
+          <input type="text" name="security-code"> 
+      </div>
+        
+      <br />
+      
+      <!-- submit form -->
+      <button type="submit"> Checkout </button>
+        
+   </form> <!-- form ends here -->
+    
+   <%- include('partials/footer.ejs') %>
+   </body>
+</html>
