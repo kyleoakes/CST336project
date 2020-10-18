@@ -7,7 +7,6 @@ Created for the CST336 "Internet Programming" course at CSU Monterey Bay.
 
 Production site: https://kyoa20-project.herokuapp.com/
 
-Test user
-  Username: guest
-  Password: secret
- 
+Test user 
+Username: guest
+Password: secret
